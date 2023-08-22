@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lists, Tables [&] Forms</title>
+  </head>
+  <body>
+    <form method="" action="http://127.0.0.1:5500/Ltf/completion.html">
+      <table
+        border="1px"
+        align="center"
+        style="background-color: lightblue"
+        width="600px"
+      >
+        <thead>
+          <th
+            colspan="2"
+            style="color: red; background-color: wheat; font-size: 32px"
+          >
+            Registration Form
+          </th>
+        </thead>
+        <tr>
+          <td>Enter Name</td>
+          <td>
+            <input
+              type="text"
+              placeholder="Enter your first and last name."
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Enter Password</td>
+          <td>
+            <input type="text" placeholder="Enter your password." required />
+          </td>
+        </tr>
+        <tr>
+          <td>Enter Address</td>
+          <td>
+            <textarea
+              cols="20"
+              rows="8"
+              title="Enter Most Recent Address"
+              placeholder="Address"
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <th>Select Game</th>
+          <td>
+            Hockey<input type="checkbox" /> <br />
+            Football<input type="checkbox" /> <br />
+            Badminton<input type="checkbox" /> <br />
+            Volleyball<input type="checkbox" /> <br />
+          </td>
+        </tr>
+        <tr>
+          <th>Gender</th>
+          <td>
+            Male<input type="radio" name="g" value="m" /> Female<input
+              type="radio"
+              name="g"
+              value="f"
+            />
+          </td>
+        </tr>
+        <tr>
+          <th>Select Your Age</th>
+          <td><input type="number" /></td>
+        </tr>
+        <tr>
+          <th>Select Photo</th>
+
+          <td><input type="file" /></td>
+        </tr>
+        <td colspan="2" align="center">
+          <input type="submit" value="Submit form" />
+          <input type="reset" value="Reset" />
+          <input type="button" value="Click Me!" />
+        </td>
+      </table>
+    </form>
+  </body>
+</html>
