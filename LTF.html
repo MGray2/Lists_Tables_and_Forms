@@ -4,11 +4,21 @@
     <title>Lists, Tables [&] Forms</title>
   </head>
   <body>
+    <style>
+      td {
+        padding-left: 10px;
+        background-color: lightblue;
+      }
+
+      input[type="radio"] {
+        accent-color: magenta;
+      }
+    </style>
     <form method="" action="http://127.0.0.1:5500/Ltf/completion.html">
       <table
         border="4px"
         align="center"
-        style="background-color: lightblue"
+        style="background-color: white"
         width="600px"
         border-style="outset"
       >
@@ -48,7 +58,7 @@
           </td>
         </tr>
         <tr>
-          <th>Select Game</th>
+          <th style="background-color: lightblue">Select Game</th>
           <td>
             Hockey<input type="checkbox" /> <br />
             Football<input type="checkbox" /> <br />
@@ -57,21 +67,20 @@
           </td>
         </tr>
         <tr>
-          <th>Gender</th>
+          <th style="background-color: lightblue">Gender</th>
           <td>
-            Male<input type="radio" name="g" value="m" /> Female<input
-              type="radio"
-              name="g"
-              value="f"
-            />
+            <input type="radio" name="g" value="m" />Male
+            <input type="radio" name="g" value="f" />Female
           </td>
         </tr>
         <tr>
-          <th>Select Your Age</th>
-          <td><input type="number" /></td>
+          <th style="background-color: lightblue">Select Your Age</th>
+          <td>
+            <input type="number" min="1" max="130" />
+          </td>
         </tr>
         <tr>
-          <th>Select Photo</th>
+          <th style="background-color: lightblue">Select Photo</th>
 
           <td><input type="file" /></td>
         </tr>
